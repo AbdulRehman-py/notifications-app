@@ -168,3 +168,32 @@
     }
 
 }
+
+@layer responsive {
+    
+@media (max-width: 550px) {
+    .note {
+      text-align: left;
+      display: block;
+    }
+    .red-dot {
+      margin-top: -1rem;
+    }
+    h1 {
+   font-size: var(--base-size);
+  }
+  }
+  
+  @media (max-width: 670px) {
+    .red-dot {
+      margin-right: -1rem;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .Notifications {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+}
