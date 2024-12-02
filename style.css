@@ -163,6 +163,8 @@
         vertical-align: middle; /* Align with text */
     }
 
-   
+     .img-chess {
+        margin-left: auto;
+    }
 
 }
