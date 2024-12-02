@@ -1,0 +1,168 @@
+@layer base {
+    *,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+    }
+
+:root {
+    --black: #000;
+    --white: hsl(0, 0%, 100%);
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very: hsl(210, 60%, 98%);
+    --Lightgrayishblue: hsl(211, 68%, 94%);
+    --Lightgrayishblue: hsl(205, 33%, 90%);
+    --Grayishblue: hsl(219, 14%, 63%);
+    --Darkgrayishblue: hsl(219, 12%, 42%);
+    --Verydarkblue: hsl(224, 21%, 14%);
+
+
+    --base-size: 1rem;
+    --h1-size: 2rem;
+    --h2: 1.5rem;
+
+    --font-style: 'jakarta', sans-serif;
+    }
+
+    body {
+        font-family: var(--font-style);
+        font-size: var(--base-size);
+        margin: 0;
+        padding: 2rem 0 2rem 0;
+        background-color: var(--Lightgrayishblue);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        
+    }
+}
+
+@layer styling {
+    #notification-section {
+        border: 2px solid var(--Darkgrayishblue);
+        background-color: var(--White);
+        max-width: 100%;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        padding: 2rem 1rem 1rem 1rem;
+        font-family: var(--font-style);
+    }
+
+    #notification-section h1 {
+        font-size: var(--h1-size);
+        
+    }
+
+    .Notifications {
+        display: flex;;
+        justify-content: space-between;
+        align-items: center;
+      
+        
+    }
+    .Notifications span {
+        text-decoration: underline;
+    }
+
+    .Notifications span:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    ul li   {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+        font-family: var(--font-style);
+        
+        
+        
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    
+
+    ul li time {
+        display: block;
+        margin-left: auto;
+    }
+    
+    .note {
+        display: flex;
+        align-items: center;
+    }
+
+    .p {
+        margin: 1rem 0 1rem 0;
+        padding: 1rem 1rem 2rem 1rem;
+        border-radius: 12px;
+        border: 1px solid var(--Grayishblue);
+
+        
+     }
+     .p > p {
+            margin: 0;
+            padding: 0;
+     }
+
+     img {
+        max-width: 100%;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        margin-right: 1rem;
+     }
+
+    ul li {
+        background-color: var(--Very);
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+     }
+
+     .highlight {
+        color: var(--black);
+        font-weight: bold;
+        font-size: var(--base-size);
+     }
+
+     .highlight-2 {
+        color: var(--Darkgrayishblue);
+        font-size: var(--base-size);
+
+     }
+
+     .highlight-3 {
+        color: var(--Blue);
+        font-size: var(--base-size);
+        font-family: var(--font-style);
+     }
+
+     h1 .number-of  {
+        text-decoration: none;
+        color: var(--white);
+        border-radius: 7px;
+        background-color: var(--Darkgrayishblue);
+        padding: 0.2rem;
+    }
+
+     .red-dot {
+        width: 8px; /* Adjust the size as needed */
+        height: 8px; /* Adjust the size as needed */
+        background-color: red; /* Red color */
+        border-radius: 50%; /* Make it a circle */
+        display: inline-block; /* Ensure it behaves like an inline element */
+        margin-left: 10px; /* Optional: Adjust the spacing as needed */
+        vertical-align: middle; /* Align with text */
+    }
+
+   
+
+}
